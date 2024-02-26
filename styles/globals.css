@@ -1,0 +1,30 @@
+* {
+  --primary_blue: #3CA2DE;
+  --primary_green: #3CD6DE;
+  --secundary_blue: #3C6FDE;
+  --secundary_green: #3CDEB0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kode Mono", monospace;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: -1; 
+}
+
+body {
+  background-image: url(../statics/images/overlay_bg.jpeg);
+  background-position: center;
+  padding: 0 5rem;
+}

@@ -1,0 +1,94 @@
+.hero {
+  min-height: calc(100vh - 2.7rem);
+  max-height: calc(100vh - 2.7rem);
+  display: flex;
+  justify-content: flex-start; /* Adjusted value */
+
+  .hero-presentation-info {
+    display: flex;
+    align-items: center;
+    padding-bottom: 4rem;
+    font-size: 1.4rem;
+    gap: 2rem;
+  }
+  
+  .hero-presentation-info img {
+    width: 15rem;
+    height: 16rem;
+    border-radius: 100%;
+    box-shadow: -1.5rem 0.7rem 1.5rem rgba(0, 0, 0, 0.15), 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .hero-presentation-info h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+  }
+
+  .brief-presentation {
+    display: flex;
+    gap: 1rem;
+
+    .slider {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      height: 2rem;
+      font-size: 1.6rem;
+      right: 15.2rem;
+      top: 1.6rem;
+      overflow: hidden;
+    }
+
+    .slider-option {
+      font-weight: 600;
+    }
+
+    .slider-option:first-child {
+      color: var(--primary_green);
+    }
+
+    .slider-option:last-child {
+      color: var(--primary_blue);
+    }
+
+    .brief-presentation .slider-option:first-child {
+      color: var(--primary_green);
+      animation: slide 10s infinite;
+    }
+  }
+
+  .hero-polygon-1,
+  .hero-polygon-2 {
+    position: absolute;
+    background: transparent;
+    width: 0;
+    height: 0;  
+  }
+
+  .hero-polygon-1 {
+    bottom: 0;
+    left: 0;
+    border-left: 100vw solid transparent;
+    border-bottom: 35vh solid var(--primary_blue);
+    z-index: 2;
+  }
+
+  .hero-polygon-2 {
+    bottom: 0vh;
+    right: 0vw;
+    border-left: 45dvh solid transparent;
+    border-bottom: 120dvh solid var(--primary_green);
+  }
+}
+
+@keyframes slide {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -1.8rem;
+  } 
+  100% {
+    margin-top: 0;
+  }
+}
