@@ -1,0 +1,30 @@
+.header {
+  display: block;
+  background-color: white;
+
+  .head-navbar {
+    padding: 0.5rem;
+  }
+
+  .nav-options {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.1rem;
+  }
+
+  .nav-options li a {
+    text-decoration: none;
+    font-weight: 800;
+    padding: 0.3rem 0.5rem;
+    color: var(--secundary_blue);
+    transform: ease-in-out 0.3s;
+  }
+
+  .nav-options li a:hover {
+    border-bottom: 2px solid var(--secundary_green);
+    color: var(--secundary_green);
+    cursor: pointer;
+  }
+}
