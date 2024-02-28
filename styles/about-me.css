@@ -1,0 +1,215 @@
+.about-me {
+  height: 100dvh;
+  display: flex;
+  position: relative;
+
+  .polygon-1 {
+    position: absolute;
+    background: transparent;
+    width: 0;
+    height: 0;
+    left: -5rem;
+    border-right: 100vw solid transparent;
+    border-top: 25vh solid var(--primary_blue);
+    z-index: -1;
+  }
+
+  .about-me-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem;
+  }
+
+  .about-me-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 65%;
+
+    .about-tittle {
+      font-size: 2.3rem;
+      margin-bottom: 1rem;
+      font-weight: 800;
+    }
+
+    .contact-data {
+      display: flex;
+      justify-content: space-between;
+
+      .CV-downloader {
+        color: var(--secundary_green);
+        background-color: white;
+        text-decoration: none;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
+        padding: 0.3rem 0.5rem;
+        border-radius: 8px;
+        border: 2px solid var(--secundary_green);
+        transition: ease-in-out 0.1s;
+      }
+
+      .CV-downloader:hover {
+        border-color: var(--secundary_green);
+        color: white;
+        background-color: var(--secundary_green);
+        cursor: pointer;
+      }
+
+      /* .CV-downloader:hover .file-icon {
+        background: url(../statics/icons/file_white.svg);
+      }
+
+      .file-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        background: url(../statics/icons/file_blue.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      } */
+
+      .contact-links {
+        display: flex;
+        gap: 1rem;
+        
+        a {
+          color: var(--secundary_blue);
+          text-decoration: none;
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          margin-top: 1rem;
+          padding: 0.3rem 0.5rem;
+          border-radius: 8px;
+          border: 2px solid var(--secundary_blue);
+          transition: ease-in-out 0.1s;
+        }
+  
+        a:hover {
+          border-color: var(--secundary_blue);
+          color: white;
+          background-color: var(--secundary_blue);
+        }
+  
+        a:hover .github-icon {
+          background: url(../statics/icons/github_white.svg);
+        }
+  
+        a:hover .linkedin-icon {
+          background: url(../statics/icons/linkedin_white.svg);
+        }
+  
+        a:hover .X-icon {
+          background: url(../statics/icons/X_white.svg);
+        }
+  
+        .github-icon,
+        .linkedin-icon,
+        .X-icon {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+  
+        .github-icon {
+          background: url(../statics/icons/github_blue.svg);
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+  
+        .linkedin-icon {
+          width: 1.3rem;
+          height: 1.3rem;
+          background: url(../statics/icons/linkedin_blue.svg);
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+  
+        .X-icon {
+          background: url(../statics/icons/X_blue.svg);
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+
+  .profesional-data {
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+
+    .education h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      font-weight: 800;
+    }
+
+    .education-history {
+      list-style: none;
+
+      .education-achivement {
+        display: flex;
+        gap: 1rem;
+        margin-top: 0.5rem;
+      }
+  
+      .education-achivement img {
+        width: 4rem;
+        height: 4rem;
+      }
+  
+      .achivement-info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 0.5rem;
+      }
+  
+      .achivement-info span {
+        font-size: 1rem;
+        opacity: 0.7;
+      }
+    }
+
+    .tech-stack h2 {
+      margin-bottom: 1rem;
+    }
+
+    .stack {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+      margin-bottom: 1rem;
+
+      .stack-items-wd {
+        background-color: var(--primary_blue);
+      }
+
+      .stack-items-ds {
+        background-color: var(--primary_green);
+      }
+
+      .stack-items-wd,
+      .stack-items-ds {
+        display: flex;
+        gap: 1rem;
+        padding: 0.5rem 2rem;
+        border-radius: 8px;
+        justify-content: center;
+        align-items: center;
+
+        .stack-item {
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+    }
+
+  }
+
+}
+

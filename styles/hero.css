@@ -1,8 +1,8 @@
 .hero {
-  min-height: calc(100vh - 2.7rem);
-  max-height: calc(100vh - 2.7rem);
+  min-height: calc(100vh - 2.4rem);
+  max-height: calc(100vh - 2.4rem);
   display: flex;
-  justify-content: flex-start; /* Adjusted value */
+  justify-content: flex-start;
 
   .hero-presentation-info {
     display: flex;
@@ -14,7 +14,7 @@
   
   .hero-presentation-info img {
     width: 15rem;
-    height: 16rem;
+    height: 18rem;
     border-radius: 100%;
     box-shadow: -1.5rem 0.7rem 1.5rem rgba(0, 0, 0, 0.15), 0 8px 16px rgba(0, 0, 0, 0.15);
   }
@@ -69,7 +69,7 @@
     bottom: 0;
     left: 0;
     border-left: 100vw solid transparent;
-    border-bottom: 35vh solid var(--primary_blue);
+    border-bottom: 25vh solid var(--primary_blue);
     z-index: 2;
   }
 

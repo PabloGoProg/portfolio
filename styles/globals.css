@@ -1,5 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
-  --primary_blue: #3CA2DE;
+  --primary_blue: #3ca3de;
   --primary_green: #3CD6DE;
   --secundary_blue: #3C6FDE;
   --secundary_green: #3CDEB0;
@@ -27,4 +31,50 @@ body {
   background-image: url(../statics/images/overlay_bg.jpeg);
   background-position: center;
   padding: 0 5rem;
+}
+
+.float-menu {
+  margin: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  z-index: 100;
+  right: 0;
+  top: calc(50dvh - 4.9rem);
+  margin-right: 1rem;
+  opacity: 0.5;
+  transition: ease-in-out 0.3s;
+}
+
+.menu-otpions {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+.m-option {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--primary_blue);
+  border: 2px solid white;
+  overflow: hidden; 
+}
+
+.m-option a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.m-option:hover {
+  cursor: pointer;
+  background-color: var(--secundary_blue);
+}
+
+.m-option:hover .float-menu {
+  opacity: 1;
 }

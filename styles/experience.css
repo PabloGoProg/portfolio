@@ -1,0 +1,181 @@
+.experience {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3rem 0 3rem;
+  position: relative;
+  gap: 4rem;
+
+  .polygon-bottom-1, 
+  .polygon-bottom-2,
+  .polygon-top-1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    margin-left: -8rem;
+  }
+
+  .polygon-top-1 {
+    top: 0;
+    right: 0;
+    border-left: 100vw solid transparent;
+    border-top: 20vh solid var(--primary_green);
+  }
+  
+  .polygon-bottom-1 {
+    border-left: 100vw solid transparent;
+    border-bottom: 20vh solid var(--primary_blue);
+  }
+
+  .polygon-bottom-2{
+    border-right: 100vw solid transparent;
+    border-bottom: 8vh solid var(--primary_green);
+  }
+
+  .experience-history {
+    width: 55%;
+    
+    h2 {
+      font-size: 2.3rem;
+      font-weight: 800;
+      padding-bottom: 3rem;
+      margin-left: -4rem;
+    }
+
+    .last-jobs {
+      list-style: none;
+
+      .past-job {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+
+        .interaction{
+          width: 75%;
+          border-left: 3px solid var(--primary_blue);
+          padding-left: 1rem;
+        }
+
+        .enterprise-charge {
+          display: flex;
+          align-items: center;
+          margin-bottom: 1rem;
+
+          .job-info {
+            display: flex;
+            flex-direction: column;
+      
+            h4 {
+              font-size: 1.1rem;
+              width: fit-content;
+              font-weight: 700;
+            }
+          }
+
+          img {
+            width: 3rem;
+            height: 3rem;
+            margin-right: 1rem;
+          }
+
+        }
+
+        span {
+          font-size: 0.9rem;
+          font-weight: 600;
+          opacity: 0.8;
+        }
+
+        strong {
+          color: var(--primary_blue);
+          font-weight: 700;
+        }
+
+      }
+    }
+  }
+
+  .hit-me-up-contact {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 2rem;
+
+    h2 {
+      font-size: 1.8rem;
+      padding: 1rem 0;
+      font-weight: 800;
+    }
+
+    .contact-form {
+      width: 100%;
+      background-color: transparent;
+      border: 2px solid black;
+      padding: 0 1.5rem 1.5rem 1.5rem;
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      .name-input {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+
+        input {
+          width: 100%;
+        }
+
+      }
+
+      .mail-input input {
+        width: 100%;
+      }
+
+      .message-input {
+        display: flex;
+        flex-direction: column;
+
+        textarea {
+          width: 100%;
+          height: 10rem;
+        }
+      }
+
+      input, textarea {
+        padding: 0.4rem 0.6rem;
+        border-radius: 4px;
+        border: none;
+        font-size: 1.1rem;
+        font-weight: 700;
+        background-color: #EEE;
+        color: balck;
+        cursor: pointer;
+        transition: ease-in-out 0.3s;
+      }
+
+      button {
+        width: 45%;
+        padding: 0.4rem 0.6rem;
+        font-size: 1.1rem;
+        font-weight: 700;
+        background-color: white;
+        border: 3px solid var(--secundary_green);
+        border-radius: 5px;
+        color: var(--secundary_green);
+        cursor: pointer;
+        transition: ease-in-out 0.3s;
+      }
+
+      button:hover {
+        background-color: var(--secundary_green);
+        color: white;
+      }
+    }
+  }
+}
