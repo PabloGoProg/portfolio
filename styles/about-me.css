@@ -59,17 +59,17 @@
         cursor: pointer;
       }
 
-      /* .CV-downloader:hover .file-icon {
+      .CV-downloader:hover .file-icon {
         background: url(../statics/icons/file_white.svg);
+        background-repeat: no-repeat;
       }
 
       .file-icon {
         width: 1.5rem;
         height: 1.5rem;
         background: url(../statics/icons/file_blue.svg);
-        background-size: cover;
         background-repeat: no-repeat;
-      } */
+      }
 
       .contact-links {
         display: flex;
@@ -97,14 +97,17 @@
   
         a:hover .github-icon {
           background: url(../statics/icons/github_white.svg);
+          background-repeat: no-repeat;
         }
   
         a:hover .linkedin-icon {
           background: url(../statics/icons/linkedin_white.svg);
+          background-repeat: no-repeat;
         }
   
         a:hover .X-icon {
           background: url(../statics/icons/X_white.svg);
+          background-repeat: no-repeat;
         }
   
         .github-icon,
@@ -116,7 +119,6 @@
   
         .github-icon {
           background: url(../statics/icons/github_blue.svg);
-          background-size: cover;
           background-repeat: no-repeat;
         }
   
@@ -124,13 +126,11 @@
           width: 1.3rem;
           height: 1.3rem;
           background: url(../statics/icons/linkedin_blue.svg);
-          background-size: cover;
           background-repeat: no-repeat;
         }
   
         .X-icon {
           background: url(../statics/icons/X_blue.svg);
-          background-size: cover;
           background-repeat: no-repeat;
         }
       }
