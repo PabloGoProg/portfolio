@@ -2,7 +2,7 @@
   min-height: calc(100vh - 2.4rem);
   max-height: calc(100vh - 2.4rem);
   display: flex;
-  justify-content: flex-start; /* Adjusted value */
+  justify-content: flex-start;
 
   .hero-presentation-info {
     display: flex;

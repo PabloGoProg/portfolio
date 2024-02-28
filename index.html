@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>PabloGoProg Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -12,24 +12,41 @@
   <link rel="stylesheet" href="./styles/hero.css">
   <link rel="stylesheet" href="./styles/about-me.css">
   <link rel="stylesheet" href="./styles/projects.css">
+  <link rel="stylesheet" href="./styles/experience.css">
 </head>
-<header class="header">
+<header class="header" id="hero">
   <nav class="head-navbar">
     <ul class="nav-options">
       <li class="nav-option">
-        <a href="">About Me</a>
+        <a href="#about-me">About Me</a>
       </li>
       <li class="nav-option">
-        <a href="">Experience</a>
+        <a href="#projects">Projects</a>
       </li>
       <li class="nav-option">
-        <a href="">Projects</a>
+        <a href="#experience">Experience</a>
       </li>
     </ul>
   </nav>
 </header>
 <body>
   <main>
+    <section class="float-menu">
+      <ul class="menu-otpions">
+        <li class="m-option">
+          <a href="#hero"></a>
+        </li>
+        <li class="m-option">
+          <a href="#about-me"></a>
+        </li>
+        <li class="m-option">
+          <a href="#projects"></a>
+        </li>
+        <li class="m-option">
+          <a href="#experience"></a>
+        </li>
+      </ul>
+    </section>
 
     <section class="hero">
       <section class="hero-presentation-info">
@@ -48,7 +65,7 @@
       <div class="hero-polygon-2"></div>
     </section>
 
-    <section class="about-me">
+    <section class="about-me" id="about-me">
       <div class="polygon-1"></div>  
       <div class="about-me-data">
         <section class="about-me-info">
@@ -139,14 +156,14 @@
       </div>
     </section>
 
-    <section class="projects"> 
+    <section class="projects" id="projects"> 
       <h2>Some of my work</h2>
       <section class="projects-slider">
         <section class="project-card">
-          <img class="project-image" src="" alt="">
+          <img class="project-image" src="./statics/images/spicyS_ships.jpeg" alt="">
           <div class="project-info">
             <div class="project-description">
-              <a href="" target="_blank">Spicy Ships</a>
+              <a href="https://github.com/PabloGoProg/Space-Invader" target="_blank">Spicy Ships</a>
               <span>Spiciy Ships is a 2D  videogame which takes a lot from the know Space Invaders.</span>
             </div>
             <div class="project-status">
@@ -162,10 +179,10 @@
           </div>
         </section>
         <section class="project-card">
-          <img class="project-image" src="" alt="">
+          <img class="project-image" src="./statics/images/UAM_Sci.jpeg" alt="">
           <div class="project-info">
             <div class="project-description">
-              <a href="" target="_blank">UAM Scientific Blog</a>
+              <a href="https://github.com/PabloGoProg/RevistaCientifica" target="_blank">UAM Scientific Blog</a>
               <span>A Scientific magazine made in order to let the hungry of tiny researchs grow in university space.</span>
             </div>
             <div class="project-status">
@@ -184,10 +201,10 @@
           </div>
         </section>
         <section class="project-card">
-          <img class="project-image" src="" alt="">
+          <img class="project-image" src="./statics/images/DS.jpeg" alt="">
           <div class="project-info">
             <div class="project-description">
-              <a href="" target="_blank">Data Structures Trainner</a>
+              <a href="https://github.com/PabloGoProg/GUI_TAD" target="_blank">Data Structures Trainner</a>
               <span>A gamificated program which represents different kind of data structures in easiest way possible for everyone be able to leanr their concepts.</span>
             </div>
             <div class="project-status">
@@ -203,10 +220,88 @@
           </div> 
         </section>
       </section>
+      <div class="polygon-projects"></div>
     </section>
 
-    <section class="experience">
-
+    <section class="experience" id="experience">
+      <div class="polygon-top-1"></div>
+      <div class="polygon-top-2"></div>
+      <section class="experience-history">
+        <h2>Here's a quick summary of my travel</h2>
+        <ul class="last-jobs">
+          <li class="past-job">
+            <div class="enterprise-charge">
+              <img src="./statics/icons/coffee_mug.svg" alt="">
+              <div>
+                <h4>
+                  Full Stack Developer
+                </h4>
+                <div class="job-info">
+                  <span>Freelance</span>
+                  <span>2023 - 2023</span>
+                </div>
+              </div>
+            </div>
+            <span class="interaction">
+              I developed a web application for a local business in order to automate the process to <strong>get the price of a product depending on the customer needs.</strong>
+            </span>
+          </li>
+          <li class="past-job">
+            <div class="enterprise-charge">
+              <img src="./statics/icons/coffee_mug.svg" alt="">
+              <div class="job-info">
+                <h4>
+                  Full Stack Developer
+                </h4>
+                <span>Freelance</span>
+                <span>2023 - 2024</span>
+              </div>
+            </div>
+            <span class="interaction">
+              A partner and i developed an E-Comer related to groceries ans it deliveries, <strong>all this were developed from scratch</strong> using new technologies for both of us.
+            </span>
+          </li>
+          <li class="past-job">
+            <div class="enterprise-charge">
+              <img src="./statics/images/sad_m&m.png" alt="">
+              <div class="job-info">
+                <h4>
+                  Free Time Manager
+                </h4>
+                <span>Existence</span>
+                <span>Birthday - Present</span>
+              </div>
+            </div>
+            <span class="interaction">
+              Sadly im new here in the programming world, which means i dont have a lot of experience, having that in mind, i have been using my <strong>time to learn and practice new technologies and concepts.</strong>
+            </span>
+          </li>
+        </ul>
+      </section>
+      <section class="hit-me-up-contact">
+        <form action="" class="contact-form">
+          <h2>Hit me up!</h2>
+          <div class="name-input">
+            <label for="">
+              <input type="text" placeholder="First name">
+            </label>
+            <label for="">
+              <input type="text" placeholder="Last name">
+            </label>
+          </div>
+          <label for="" class="mail-input">
+            <input type="email" placeholder="Enter you'r work email">
+          </label>
+          <label for="" class="message-input">
+            <textarea name="" id="" cols="30" rows="5" placeholder="Leave me a message"></textarea>
+          </label>
+          <button>
+            Send!
+          </button>
+        </form>
+      </section>
+      <div class="polygon-bottom-1"></div>
+      <div class="polygon-bottom-2"></div>
     </section>
 
   </main>
