@@ -29,7 +29,17 @@
     display: flex;
     gap: 1rem;
 
-    .slider {
+    .wd {
+      color: var(--primary_blue);
+      font-weight: 700;
+    }
+
+    .ds {
+      color: var(--primary_green);
+      font-weight: 700;
+    }
+
+    /* .slider {
       display: flex;
       flex-direction: column;
       position: relative;
@@ -37,8 +47,8 @@
       font-size: 1.6rem;
       right: 15.2rem;
       top: 1.6rem;
-      overflow: hidden;
-    }
+      animation: slide 10s infinite;
+    } */
 
     .slider-option {
       font-weight: 600;
@@ -50,11 +60,6 @@
 
     .slider-option:last-child {
       color: var(--primary_blue);
-    }
-
-    .brief-presentation .slider-option:first-child {
-      color: var(--primary_green);
-      animation: slide 10s infinite;
     }
   }
 
